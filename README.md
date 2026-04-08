@@ -23,15 +23,33 @@ the results presented in the associated article.
 
 ## Requirements
 
-The code was developed using Python 3.13.9 
+The code was developed using **Python 3.13.9**.
 
 ## Installation
 
-It is recommended to use a virtual environment:
+It is recommended to use a virtual environment.
+
+Create the environment:
 ```bash
-    python -m venv .venv
-    .\.venv\Scripts\activate
-    pip install -r requirements.txt
+python -m venv .venv
+```
+
+Activate the environment:
+
+**Windows:**
+```bash
+.\.venv\Scripts\activate
+```
+
+**Linux / macOS:**
+```bash
+source .venv/bin/activate
+```
+
+Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## How to Run
 
