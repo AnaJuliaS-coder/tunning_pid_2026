@@ -13,7 +13,7 @@ the results presented in the associated article.
 
 ## Repository Structure
 
--   `tuningPID.py` or notebook: Main script containing the
+-   `Optimazed algorithm.ipynb` or notebook: Main script containing the
     implementation of the tuning algorithms.
 
 -   `data/` (Excel or CSV files): Experimental data used for system
@@ -23,16 +23,15 @@ the results presented in the associated article.
 
 ## Requirements
 
-The code was developed using Python 3.x. The following libraries are
-required:
+The code was developed using Python 3.13.9 
 
--   numpy
--   pandas
--   matplotlib
+## Installation
 
-Install dependencies using:
-
-    pip install numpy pandas matplotlib
+It is recommended to use a virtual environment:
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate
+pip install -r requirements.txt
 
 ## How to Run
 
@@ -41,15 +40,14 @@ Install dependencies using:
 2.  Update the file path in the script if necessary.
 3.  Run the script:
 
-    jupyter notebook Otimization_controlparameters.ipynb
+    jupyter notebook Optimazed algorithm.ipynb
 
 ## Methodology
 
-The implemented tuning procedure is based on Ziegler-Nichols methods,
+The implemented tuning procedure is based on classical methods,
 which rely on extracting key parameters from the process response:
 
 -   Process gain
--   Dead time
 -   Time constant
 
 From these values, the PID parameters are computed according to standard
@@ -60,7 +58,8 @@ tuning rules.
 The input data should contain:
 
 -   Time vector
--   Process output (e.g., pressure)
+-   Measure (V) (e.g., pressure)
+-   Control Signal (e.g., PWM)
 
 The data must represent a step response of the system.
 
