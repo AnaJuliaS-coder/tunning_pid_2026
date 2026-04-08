@@ -29,9 +29,9 @@ The code was developed using Python 3.13.9
 
 It is recommended to use a virtual environment:
 ```bash
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
+    python -m venv .venv
+    .\.venv\Scripts\activate
+    pip install -r requirements.txt
 
 ## How to Run
 
