@@ -74,7 +74,7 @@ void setup() {
 //
 // This forces a manual step input to the system, allowing data
 // acquisition for parameter identification using the script
-// "Optimization_controlparameters".
+// "Optimazed algorithm".
 //--------------------------------------------------------------------------
 void PID() {
   error = SP1_voltDEG - Measure; // Control error (V)

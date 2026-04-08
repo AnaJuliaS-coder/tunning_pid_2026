@@ -72,8 +72,8 @@ void setup() {
 //   (2) uncommenting the line:               p = 5;
 //
 // This forces a manual step input to the system, allowing data
-// acquisition for parameter identification using the script
-// "Optimization_controlparameters".
+// acquisition for parameter identification using the workflow
+// "Optimazed algorithm".
 void PID() {
   error = SP1_voltDEG - Measure; // Control error (V)
   if (millis() < controlDelayTime) {
